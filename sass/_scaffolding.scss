@@ -1,0 +1,21 @@
+//----------------------------------------------//
+// Scaffolding contain following properties
+// * Box Sizing
+// * Body Reset
+// * Form tags Typographics Reset
+// * Links
+//----------------------------------------------//
+
+
+
+// Universal Box sizing with Inheritance concept
+// For more : https://css-tricks.com/box-sizing/#article-header-id-6
+html {
+    @include box-sizing(border-box);
+}
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
+

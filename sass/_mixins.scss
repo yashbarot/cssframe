@@ -1,0 +1,13 @@
+//----------------------------------------------//
+// List of mixins
+// * Box Sizing
+// * Body Reset
+// * Form tags Typographics Reset
+// * Links
+//----------------------------------------------//
+
+
+
+@mixin box-sizing ($boxmodel) {
+    box-sizing: $boxmodel;
+}
