@@ -14,8 +14,42 @@ html {
     @include box-sizing(border-box);
 }
 *, 
-*:before, 
-*:after {
+*::before, 
+*::after {
     box-sizing: inherit;
 }
 
+html {
+    font-size: $font-size-root
+}
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    //line-height: $line-height-base;
+    color: $body-font-color;
+    background-color: $body-bg;
+}
+
+
+// Text-align Helpers
+.text-left {
+    @include text-align(left);
+}
+.text-center {
+    @include text-align(center);
+}
+.text-right {
+    @include text-align(right);
+}
+.text-justify {
+    @include text-align(justify);
+}
+
+// Code Tag
+code {
+    background-color: #ececec;
+    color: #F44336;
+    padding: 0.15em;
+    border-radius: 5px;
+}

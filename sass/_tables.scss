@@ -1,0 +1,93 @@
+//----------------------------------------------//
+// Tables
+// * Border table
+// * Striped table
+// * Reponsive table
+//----------------------------------------------//
+
+
+
+table,
+.table {
+    width: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid #d7d7d7;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+// Border table
+.table-border {
+    border: 1px solid #d7d7d7;
+
+    th,
+    td {
+        border: 1px solid #d7d7d7;
+    }
+
+    thead {
+        th,
+        td {
+            border-bottom-width: 2px;
+        }
+    }
+}
+
+.table-sm-padding {
+    @include table-padding(.2em);
+}
+
+.table-md-padding {
+    @include table-padding(.7em);
+}
+// Use .table-padding for custom padding
+// .table-padding located in _custom.scss
+
+// Striped table
+.table-striped {
+    tbody tr{
+        &:nth-child(odd) {
+            background-color: $table-odd-row-bg;
+        }
+        &:nth-child(even) {
+            background-color: $table-even-row-bg;
+        }
+    }
+}
+
+// Responsive table
+$breakpoint: 480px;
+
+.table-responsive {
+
+  tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    display: none;   
+  }
+  
+  td {
+    display: block;
+
+    &:before {
+      content: attr(data-th)": ";
+      font-weight: bold;
+
+      width: 6.5em;
+      display: inline-block;
+
+      @media (min-width: $breakpoint) {
+        display: none;
+      }
+    }
+  }
+  
+  th, td {
+    @media (min-width: $breakpoint) {
+      display: table-cell;
+    }
+  }
+}

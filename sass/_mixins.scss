@@ -11,3 +11,14 @@
 @mixin box-sizing ($boxmodel) {
     box-sizing: $boxmodel;
 }
+
+@mixin text-align ($alignment) {
+    text-align: $alignment;
+}
+
+@mixin table-padding ($padding) {
+    th,
+    td {
+        padding: $padding;
+    }
+}

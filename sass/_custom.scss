@@ -1,0 +1,4 @@
+// Custom padding in table cells
+.table-padding {
+    @include table-padding(2em);
+}
