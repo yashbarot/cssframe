@@ -1,12 +1,10 @@
 language: node_js
 node_js:
   - "6"
-  - "6.1"
-  - "5.11"
-  - "0.6"
-  - "iojs"
-os:
-  - osx
-  - windows
 install:
-  - npm install  
+  - npm install
+addons:
+  sauce_connect:
+    username: "yashbarot"
+    access_key:
+      secure: "585e88db-1e42-40f8-b590-0eedb8cb05ca `travis encrypt`"
