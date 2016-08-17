@@ -1,10 +1,9 @@
 language: node_js
-node_js:
-  - "6"
+node_js: stable
 install:
-  - npm install
-addons:
-  sauce_connect:
-    username: "yashbarot"
-    access_key:
-      secure: "585e88db-1e42-40f8-b590-0eedb8cb05ca `travis encrypt`"
+- npm install
+dd:
+  secure: PG6kFs+x0tAfUJRLMzeqRBJZN8rncMyIfOXmxOAImDgNgHccVjYhTFGTRA7+rW72619fhQle5BJWEEpqfdYhg09yUckaXOV0fk/Aku717qT2Sy2bmctE9kS8NTRmOfgxr6hAMlIV05LeTvCxp+fHhJkDvcWpKjLiOtxBRkxceG5p16koFqrkurCWbu/nPUKiXHKNm8gfskkqFNuf+HN3XV3Ci+xoBEfdsx00v3Jg0XaSHLa08XWR8us5vEjtGhbj+x7wcxZYtAeKx/grWoyo3TbGe9EuXzxC2El9rM+Xu9zHZ3ZlWU+hXlGNIbhRnC+ZE9ReNRgoyPG5HKXSgAyjx+BhZhTi7rB/M8zKAn29rywBPgge022pgfkDGNRqWBStbvMpCZBdGshJz+J0eQUxfXHbD8tuWU/y2BvoTk1gdvxoF2z13CYhS/NVGp9jgRMpf0Dhr8L+LJs2xbc85Qll7Ib+1fzB8Z8LbRvom+MMIGdKl/ykAjU9ag/eFHgFgNbCIG+k3Qc7AKaWKReXeNLwMYt3R0eU5ZJfsP6OvCmKzikhgvDJJU83GzzafdNAUklKS9SKHWvoqnlebGNRA+rTvRiY8/5ucgn/9EC8P2mCbvrckiINPb6bxdl6HM1mvO/couunpWuHbh2rElvwPT0Trvp3Et3VxuXUsEId89Nb/W4=
+env:
+  global:
+    secure: pR18f1clV7O8fV9z73gjcfAdcVSwUMg9rrddRL+uhdgAqoFHhgbqKNgbk/z8DPE/Wl/LH6yTEdjcuDhijU5g4Zbt5ckoJnmKFR01rOeXN4qIglGpbM5Oo0avKfLodkfx/X3IaAjWXQAtXzioiA+m3qEAEfakqeULXgFR8vuvU9Nb4kUpLDvaw+KQzf/7mxb0oBwqJWJp2ALJm5JUOunw05Fiih7uvgNYx8P2zE0KZWDRXDPEcjTrbSH/Ur7wGtGLVS3ZfDcW6fniTr0Y5tW9NIEc4KOXRd+CyY/6+Fc6ICIQTuZmFBjRLtAyaxUeIUZgO8zKU5fGpGYGIcZmL+z9mhknn0h+OsTby73Xicu5F69wmBh2vFXg3n+ergESeMall49pYphDholysauWVuZiztlx3iD4vSAtxs7RWR3oDQPJpA2F9r+QMxWX+Bp1CLP+TzHUD+h2BxEYGGCWfEif9T0lse1qayZCgjz3KdWE/xAvJ9NvJiD/8dopLft5ZiCuUtTY5p/d4H43Y/AU92CIV5vAoPnghnSvoP/LzkkB0Am2Iq51I7yJ3yMZ2KpXZay2VefpUtyohQeBmmMBx8IoZZ+g5zVQi9W+SiZpQeh4CHkzxjQBUmqqPCE8/LOH/gV8/2BkRHMy9vKzkc5buIjPHNeZRzFC79DPlCwb7m16wOo=
