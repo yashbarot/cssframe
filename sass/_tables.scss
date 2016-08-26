@@ -75,9 +75,8 @@ $breakpoint: 480px;
     &:before {
       content: attr(data-th)": ";
       font-weight: bold;
-
-      width: 6.5em;
-      display: inline-block;
+      display: block;
+      margin-bottom: 5px;
 
       @media (min-width: $breakpoint) {
         display: none;

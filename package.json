@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "A light weight css framework",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "Yash Barot",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-postcss": "^6.1.1",
     "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^1.6.0"
+    "gulp-sourcemaps": "^1.6.0",
+    "webdriverio": "^4.2.8"
   }
 }

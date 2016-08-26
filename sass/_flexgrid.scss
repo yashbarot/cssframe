@@ -1,0 +1,132 @@
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  //justify-content: space-between;
+  text-align: center;
+}
+
+$flex-column-class: flex !default;
+$columns: 12 !default;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+
+@mixin make-column($i, $breakpoint) {
+  $flex-basis: percentage($i / $columns);
+  .#{$flex-column-class}-#{$breakpoint}-#{$i} {
+      flex: 0 0 calc(#{$flex-basis} - 5px);
+      //max-width: calc(#{$flex-basis} - 20px);
+    }
+}
+
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
+
+@function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
+  $next: breakpoint-next($name, $breakpoints);
+  @return if($next, breakpoint-min($next, $breakpoints) - 1px, null);
+}
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-down($name, $breakpoints: $grid-breakpoints) {
+  $max: breakpoint-max($name, $breakpoints);
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-only($name, $breakpoints: $grid-breakpoints) {
+  @include media-breakpoint-up($name, $breakpoints) {
+    @include media-breakpoint-down($name, $breakpoints) {
+      @content;
+    }
+  }
+}
+
+// @for $i from 1 through 12 {
+//   .#{$flex-column-class}-#{$i} { 
+//     flex: $i;
+//     border: 1px solid #d7d7d7;
+//     padding: 0.5em;
+//     margin: 0.2em;
+//   }
+
+//   // Extra small devices (portrait phones, less than 544px)
+//   @media (max-width: 543px) {
+//     .#{$flex-column-class}-xs-#{$i} {
+//       flex: 0 0 percentage($i / 12);
+//       max-width: percentage($i / 12);
+//     }
+//   }
+// }
+
+// Normal Views
+%flex-col-styles {
+  border: 1px solid #d7d7d7;
+  padding: 5px;
+  margin: 0 auto 5px auto;
+}
+
+@mixin flex-col-list {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @for $i from 1 through $columns {
+      .#{$flex-column-class}-#{$breakpoint}-#{$i} {
+        @extend %flex-col-styles;
+      }
+    }
+  }
+}
+@include flex-col-list;
+
+// Normal Views
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @for $i from 1 through $columns {
+    @include make-column($i, $breakpoint);
+  }
+}
+
+// Different Viewports
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+      @for $i from 1 through $columns {
+        @include make-column($i, $breakpoint);
+      }
+    }
+}
+
+@mixin make-flex-offset($size, $breakpoint) {
+  .offset-#{$breakpoint}-#{$size} {
+    margin-left: percentage($size / $columns);
+  }
+}
+
+// Offsets
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+      @for $i from 1 through $columns {
+        @include make-flex-offset($i, $breakpoint);
+      }
+    }
+}
