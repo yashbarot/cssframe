@@ -3,343 +3,325 @@
     <head>
         <title>Css Framework</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <link href="../css/core.css" rel="stylesheet">
     </head>
     <body>
-        <div>
-            <fieldset>
-                <legend>Tables</legend>
-                <ol>
-                    <li>Border Table</li>
-                    <li>Striped Table</li>
-                    <li>Responsive Table</li>
-                </ol>
-
-                <fieldset>
-                    <legend>1. Border Table</legend>
-                    <p>To get border around <code>&lt;th&gt;</code> and <code>&lt;td&gt;</code> use <code>.table-border</code> class in <code>&lt;table&gt;</code>.</p>
-                    <ul>
-                        <li>
-                            <p><code>&lt;table class="table-sm-padding"&gt;</code></p>
-                            <table class="table table-border table-sm-padding">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Contact</th>
-                                        <th>Address</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </li>
-                        <li>
-                            <p><code>&lt;table class="table-md-padding"&gt;</code></p>
-                            <table class="table table-border table-md-padding">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Contact</th>
-                                        <th>Address</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </li>
-                        <li><code>&lt;table class="table-padding"&gt;</code> for custom padding put a value in <code>.table-padding</code> in <code>_custom.scss</code> file.</li>
-                    </ul>
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend>2. Striped Table</legend>
-                    <ul>
-                        <li>
-                            <p>Striped on <code>&lt;tr&gt;</code> use <code>.table-striped</code> class in <code>&lt;table&gt;</code> without <code>.table-border</code>.</p>
-                            <table class="table table-striped table-md-padding">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Contact</th>
-                                        <th>Address</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                </tbody>
-                                <!--<tfoot>
-                                    <tr>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                    </tr>
-                                </tfoot>-->
-                            </table>  
-                        </li>
-                        <li>
-                            <p>Striped on <code>&lt;tr&gt;</code> use <code>.table-striped</code> class in <code>&lt;table&gt;</code> with <code>.table-border</code>.</p>
-                            <table class="table table-border table-striped table-md-padding">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Contact</th>
-                                        <th>Address</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mr. James Garry</td>
-                                        <td>james@abc.com</td>
-                                        <td>+21 1234567890</td>
-                                        <td>7445 Weeping Birch Street</td>
-                                        <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                </tbody>
-                                <!--<tfoot>
-                                    <tr>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                    </tr>
-                                </tfoot>-->
-                            </table>  
-                        </li>
-                    </ul>  
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend>3. Responsive Table</legend>
-                    <ul>
-                        <li>
-                            <p>To convert table into responsive use <code>.table-responsive</code> class in <code>&lt;table&gt;</code>.</p>
-                            <p>Use <code>data-th=""</code> on every <code>&lt;td&gt;</code> and value should be same as <code>&lt;th&gt;Name&lt;/th&gt;</code>.</p>
-                            <p>Go to Mobile view and check the Responsiveness.</p>
-                            <table class="table table-striped table-md-padding table-responsive">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Contact</th>
-                                        <th>Address</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td data-th="Name">Mr. James Garry</td>
-                                        <td data-th="Email">james@abc.com</td>
-                                        <td data-th="Contact">+21 1234567890</td>
-                                        <td data-th="Address">7445 Weeping Birch Street</td>
-                                        <td data-th="Actions"><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td data-th="Name">Mr. James Garry</td>
-                                        <td data-th="Email">james@abc.com</td>
-                                        <td data-th="Contact">+21 1234567890</td>
-                                        <td data-th="Address">7445 Weeping Birch Street</td>
-                                        <td data-th="Actions"><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td data-th="Name">Mr. James Garry</td>
-                                        <td data-th="Email">james@abc.com</td>
-                                        <td data-th="Contact">+21 1234567890</td>
-                                        <td data-th="Address">7445 Weeping Birch Street</td>
-                                        <td data-th="Actions"><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td data-th="Name">Mr. James Garry</td>
-                                        <td data-th="Email">james@abc.com</td>
-                                        <td data-th="Contact">+21 1234567890</td>
-                                        <td data-th="Address">7445 Weeping Birch Street</td>
-                                        <td data-th="Actions"><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td data-th="Name">Mr. James Garry</td>
-                                        <td data-th="Email">james@abc.com</td>
-                                        <td data-th="Contact">+21 1234567890</td>
-                                        <td data-th="Address">7445 Weeping Birch Street</td>
-                                        <td data-th="Actions"><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
-                                    </tr>
-                                </tbody>
-                                <!--<tfoot>
-                                    <tr>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                        <td>&nbsp;</td>
-                                    </tr>
-                                </tfoot>-->
-                            </table>  
-                        </li>
-                    </ul>  
-                </fieldset>
-
+<pre>
+1. Border Tables
+To get border around <code>&lt;th&gt;</code> and <code>&lt;td&gt;</code> use <code>.table-border</code> class in <code>&lt;table&gt;</code>.
+<code>&lt;table class="table-sm-padding"&gt;</code>
+</pre>
+        <table class="table table-border table-sm-padding">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tfoot>
+        </table>
                 
-            </fieldset>
-        </div>
-    </body>
+            </body>
+        <hr>
+<pre>
+<code>&lt;table class="table-md-padding"&gt;</code>    
+</pre>
+        <table class="table table-border table-md-padding">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+<pre>
+<code>&lt;table class="table-padding"&gt;</code> for custom padding put a value in <code>.table-padding</code> in <code>_custom.scss</code> file.
+</pre>
+        <hr>
+<pre>
+2. Striped Table
+Striped on <code>&lt;tr&gt;</code> use <code>.table-striped</code> class in <code>&lt;table&gt;</code> without <code>.table-border</code>.
+</pre>
+        <table class="table table-striped table-md-padding">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+            </tbody>
+            <!--<tfoot>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tfoot>-->
+        </table> 
+        <hr>
+<pre>
+Striped on <code>&lt;tr&gt;</code> use <code>.table-striped</code> class in <code>&lt;table&gt;</code> with <code>.table-border</code>.
+</pre>
+        <table class="table table-border table-striped table-md-padding">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Mr. James Garry</td>
+                    <td>james@abc.com</td>
+                    <td>+21 1234567890</td>
+                    <td>7445 Weeping Birch Street</td>
+                    <td><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+            </tbody>
+            <!--<tfoot>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tfoot>-->
+        </table>
+        <hr>
+<pre>
+3. Responsive Table
+To convert table into responsive use <code>.table-responsive</code> class in <code>&lt;table&gt;</code>.
+Use <code>data-th=""</code> on every <code>&lt;td&gt;</code> and value should be same as <code>&lt;th&gt;Name&lt;/th&gt;</code>.
+Go to Mobile view and check the Responsiveness.
+</pre>
+        <table class="table table-striped table-md-padding table-responsive">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Address</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-th="Name">Mr. James Garry</td>
+                    <td data-th="Email">james@abc.com</td>
+                    <td data-th="Contact">+21 1234567890</td>
+                    <td data-th="Address">7445 Weeping Birch Street</td>
+                    <td data-th="Actions"><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td data-th="Name">Mr. James Garry</td>
+                    <td data-th="Email">james@abc.com</td>
+                    <td data-th="Contact">+21 1234567890</td>
+                    <td data-th="Address">7445 Weeping Birch Street</td>
+                    <td data-th="Actions"><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td data-th="Name">Mr. James Garry</td>
+                    <td data-th="Email">james@abc.com</td>
+                    <td data-th="Contact">+21 1234567890</td>
+                    <td data-th="Address">7445 Weeping Birch Street</td>
+                    <td data-th="Actions"><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td data-th="Name">Mr. James Garry</td>
+                    <td data-th="Email">james@abc.com</td>
+                    <td data-th="Contact">+21 1234567890</td>
+                    <td data-th="Address">7445 Weeping Birch Street</td>
+                    <td data-th="Actions"><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td data-th="Name">Mr. James Garry</td>
+                    <td data-th="Email">james@abc.com</td>
+                    <td data-th="Contact">+21 1234567890</td>
+                    <td data-th="Address">7445 Weeping Birch Street</td>
+                    <td data-th="Actions"><a href="#">Edit</a><a href="#">View</a><a href="#">Delete</a></td>
+                </tr>
+            </tbody>
+            <!--<tfoot>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tfoot>-->
+        </table>
+    </html>
 </html>

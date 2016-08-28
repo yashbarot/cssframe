@@ -1,0 +1,6 @@
+@mixin table-padding ($padding) {
+    th,
+    td {
+        padding: $padding;
+    }
+}
